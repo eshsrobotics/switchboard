@@ -31,15 +31,16 @@ html.no-js
         | browser. Please
         a(href='http://browsehappy.com/') upgrade your browser
         | to improve your experience.
-    .hero-unit
-      h1 'Allo, 'Allo!
-      p You now have
-      ul
-        li HTML5 Boilerplate
-        li Modernizr
+
+    .row
+      .large-4.columns
+        h1 Battery Level
+        input(id='batteryLevel')
+
     // build:js scripts/vendor.js
     // bower:js
     script(src='bower_components/jquery/jquery.js')
+    script(src='bower_components/jquery-knob/js/jquery.knob.js')
     // endbower
     // endbuild
     // build:js scripts/main.js
